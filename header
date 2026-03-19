@@ -1,0 +1,10 @@
+<header>
+    <h1>🔥 Meu Servidor Minecraft 🔥</h1>
+    <nav>
+        <a href="index.html" class="botao">Início</a>
+        <a href="loja.html" class="botao">Loja</a>
+        <a href="regras.html" class="botao">Regras</a>
+        <a href="contato.html" class="botao">Contato</a>
+        <a href="curriculo.html" class="botao">VIP / Kits</a>
+    </nav>
+</header>

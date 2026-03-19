@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor Minecraft - Início</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- HEADER COM MENU -->
+<header>
+    <h1>🔥 Meu Servidor Minecraft 🔥</h1>
+    <nav>
+        <!-- Botão Início funciona abrindo index.html -->
+        <a href="index.html" class="botao">Início</a>
+        <a href="loja.html" class="botao">Loja</a>
+        <a href="regras.html" class="botao">Regras</a>
+        <a href="contato.html" class="botao">Contato</a>
+        <a href="curriculo.html" class="botao">VIP / Kits</a>
+    </nav>
+</header>
+
+<!-- SEÇÃO STATUS -->
+<section class="status">
+    <h2>Status do servidor</h2>
+    <p><strong>IP:</strong> jogar.meuservidor.com <button onclick="copiarIP()">Copiar IP</button></p>
+    <p><strong>Porta:</strong> 25565</p>
+
+    <div id="serverStatus" class="offline">
+        🔴 OFFLINE
+    </div>
+    <button onclick="toggleStatus()">Simular ligar/desligar</button>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <p>© 2026 - Servidor Minecraft</p>
+</footer>
+
+</body>
+</html>

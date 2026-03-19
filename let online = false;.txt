@@ -1,0 +1,36 @@
+let online = false;
+
+// Botão Início: leva para topo e reseta status
+function voltarInicio() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const status = document.getElementById("serverStatus");
+    if(status){
+        status.textContent = "🔴 OFFLINE";
+        status.className = "offline";
+    }
+}
+
+// Botão “Simular Status”
+function toggleStatus() {
+    const status = document.getElementById("serverStatus");
+    online = !online;
+    if (online) {
+        status.textContent = "🟢 ONLINE";
+        status.className = "online";
+    } else {
+        status.textContent = "🔴 OFFLINE";
+        status.className = "offline";
+    }
+}
+
+// Botão Copiar IP
+function copiarIP() {
+    navigator.clipboard.writeText("jogar.meuservidor.com");
+    alert("IP copiado!");
+}
+
+// Função para abrir outras páginas via JS
+function abrirPagina(pagina){
+    window.location.href = pagina;
+}
